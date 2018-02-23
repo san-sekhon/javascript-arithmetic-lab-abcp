@@ -23,6 +23,9 @@ function dec(n) {
 }
 
 function makeInt(n, base) {
+  if (base === undefined) {
+    base = 10;
+  }
   return parseInt(n, base)
 }
 
